@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+.rowtop{
+	height: 80px;
+	box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+}
+.navbarL{
+			cursor: pointer;
+
+}
+a:link {
+    color: #343434;
+    font-size: 16px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+#HFlogo{
+	width: 80px;
+	height: 70px;
+}
+
+/* dropdown on mouseover */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+/* switch arrow + rotate dropdown*/
+.drop-cursor-t{
+	cursor: text;
+}
+.dropdown.dropdown-item a:link{
+	cursor: text;
+}
+.dropdown img{
+	transition: transform 0.3;
+	transition: 0.3s;
+
+}
+.LinkOver:hover a:link{
+	color: #91c11e;
+}
+.dropdown:hover img{
+	transform: rotate(-180deg);
+
+}
+.navbar-right{
+		cursor: pointer;
+
+}
+.navbar-right a:link{
+	color: #91c11e;
+	font-size: 14px;
+	letter-spacing: -0.3px;
+	font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+}
+.RLinkOver:hover a:link{
+	color: #659a41;
+}
