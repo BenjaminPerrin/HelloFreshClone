@@ -1,5 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
+
+    
+    <head>
+        <meta charset="UTF-8">
+        <title>HelloFresh</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <meta name="viewport" content="width=device-width, initial-scale=1">   
+        <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    </head>
+    
+    <body>
+    <div class="container">
 <head>
   <title>HelloFresh</title>
   <meta charset="utf-8">
@@ -148,55 +161,228 @@
       </div>
     </div>
 </section>
-
-  <section class="weekly_menu">
-                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-                            <div class="carousel-inner">
-                              <div class="carousel-item active">
-                                <img class="d-block w-100" src="..." alt="First slide">
-                              </div>
-                              <div class="carousel-item">
-                                <img class="d-block w-100" src="..." alt="Second slide">
-                              </div>
-                              <div class="carousel-item">
-                                <img class="d-block w-100" src="..." alt="Third slide">
-                              </div>
+<!--sections-->
+            
+            <section class="weekly_menu">
+                <div class="row date_week">
+                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#myCarousel" data-slide-to="0"></li>
+                            <li data-target="#myCarousel" data-slide-to="1" class="active"></li>
+                            <li data-target="#myCarousel" data-slide-to="2"></li>
+                            <li data-target="#myCarousel" data-slide-to="3"></li>
+                        </ol>
+                    
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <h1>Weekly menus for 24 Feb - 2 Mar</h1>
                             </div>
-                            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                              <span class="sr-only">Previous</span>
-                            </a>
-                            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                              <span class="sr-only">Next</span>
-                            </a>
-                          </div>
+                        
+                            <div class="item">
+                                <h1>Weekly menus for 3 Mar - 9 Mar</h1>
+                            </div>
+                        
+                            <div class="item">
+                                <h1>Weekly menus for 10 Mar - 16 Mar</h1>
+                            </div>
+
+                            <div class="item">
+                                <h1>Weekly menus for 17 Mar - 23 Mar</h1>
+                            </div>
+                        </div>
+                    
+                        <!-- Left and right controls -->
+                        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                        <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                        <span class="sr-only">Next</span>
+                        </a>
                     </div>
+                </div>
+
+                <hr>
+                    
+                <div class="type_menu">
+                    <!-- Centered Pills -->
+                    <ul class="nav nav-pills nav-justified">
+                        <li class="active"><a href="#classic_plan">Classic Plan</a></li>
+                        <li><a href="#veggie_plan">Veggie Plan</a></li>
+                        <li><a href="#family_plan">Family Plan</a></li>
+                    </ul>
+                </div>
+
+                <div class="list_dish">
+
+                        <div class="row">                        
+                                <div class="col-xs-12" >
+                                    <div class="carousel slide multi-item-carousel" id="theCarousel">
+                                        <div class="carousel-inner">
+                                            <div class="item active" id="classic_plan">
+                                                <div class="col-xs-12 col-md-4">
+                                                    <a href="#classic_plan"></a><img src="http://res.cloudinary.com/dx0ubgpga/image/upload/v1520193016/classic_plan/chicken_orzo.jpg" alt="chicken" class="img-responsive"></a>
+                                                    <div class="caption">
+                                                        <div class="legend"><span class="name_dish">Winner winner Chicken Orzo Dinner</span><br> with Cheesy Roasted Zucchini and Tomato</div>
+                                                        <div class="time"><svg class="fela-1rtnddl" width="20" height="20" viewBox="0 0 512 512" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" aria-labelledby="a11y--id a11y--id-desc"><title id="a11y--id"></title><desc id="a11y--id-desc"></desc><path d="M255.992 64C150.137 64 64.008 150.13 64.008 256c0 105.869 86.13 192 191.985 192 105.87 0 192-86.131 192-192-.001-105.87-86.13-192-192.001-192zm49.92 294.21l13.635-7.875 20.641 35.76a159.565 159.565 0 0 1-13.614 7.89l-20.662-35.775zM411.033 256c0 2.654-.068 5.279-.195 7.875h-41.371v-15.736h41.371c.127 2.596.195 5.236.195 7.861zm-52.831-49.92l-7.875-13.621 35.76-20.624a150.122 150.122 0 0 1 7.875 13.62l-35.76 20.625zm-31.628-88.051a155.46 155.46 0 0 1 13.614 7.906l-20.641 35.76-13.635-7.89 20.662-35.776zm23.753 201.526l7.875-13.635 35.76 20.655a154.62 154.62 0 0 1-7.875 13.62l-35.76-20.64zm-164.902 74.43l20.655-35.775-13.627-7.875-20.647 35.744a156.064 156.064 0 0 1-45.893-45.885l35.752-20.639-7.867-13.635-35.767 20.655c-9.751-18.976-15.735-40.2-16.868-62.7h41.363v-15.736h-41.363c1.134-22.499 7.118-43.71 16.868-62.684l35.767 20.625 7.867-13.635-35.752-20.61a156.27 156.27 0 0 1 45.893-45.9l20.647 35.76 13.627-7.89-20.655-35.775c21.188-10.86 45.157-17.054 70.567-17.054v310.08c-25.41-.001-49.379-6.211-70.567-17.071z" fill="#343434" fill-rule="evenodd"></path></svg><span class="time_baking">30 min</span></div>
+                                                    </div>
+                                                </div> 
+                                            </div>
+                                            <div class="item">
+                                                <div class="col-xs-12 col-md-4">
+                                                    <a href="#classic_plan"><img src="http://res.cloudinary.com/dx0ubgpga/image/upload/v1520193015/classic_plan/beef_tacos.jpg" alt="beefTacos" class="img-responsive"></a>
+                                                    <div class="caption">
+                                                        <div class="legend"><span class="name_dish">Pineapple Poblano Beef Tacos</span><br> with Lime Crema, Cilantro, and Warm Spices</div>
+                                                        <div class="time"><svg class="fela-1rtnddl" width="20" height="20" viewBox="0 0 512 512" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" aria-labelledby="a11y--id a11y--id-desc"><title id="a11y--id"></title><desc id="a11y--id-desc"></desc><path d="M256.008 64C150.122 64 63.992 150.13 63.992 255.985 63.992 361.87 150.122 448 256.008 448c105.869 0 192-86.13 192-192.015 0-105.855-86.131-191.985-192-191.985zm84.194 322.081l-20.655-35.746-13.606 7.875 20.641 35.76c-18.976 9.751-40.215 15.736-62.715 16.876v-41.371h-15.735v41.371c-22.501-1.14-43.725-7.126-62.701-16.876l20.641-35.76-13.604-7.86-20.641 35.73a156.032 156.032 0 0 1-45.9-45.9l35.746-20.641-7.875-13.62-35.761 20.655c-9.734-18.974-15.749-40.214-16.89-62.715h41.386v-15.735h-41.386c1.141-22.499 7.156-43.725 16.89-62.7l35.761 20.655 7.875-13.62-35.746-20.67a155.955 155.955 0 0 1 45.9-45.87l20.641 35.729 13.604-7.875-20.641-35.744c21.195-10.89 45.166-17.07 70.576-17.07v155.024l56.64-98.295-6.706-3.915 20.641-35.744c4.68 2.385 9.225 5.04 13.62 7.89l-20.655 35.729-6.811-3.929-56.729 98.264 98.204-56.804-3.869-6.72 35.744-20.67a155.93 155.93 0 0 1 7.906 13.635l-35.775 20.655-3.931-6.824-98.279 56.729 113.475-.074v-7.786h41.354c.151 2.596.226 5.235.226 7.86 0 2.64-.075 5.281-.226 7.875h-41.369l.015-7.875H256.008l134.28 77.371a156.304 156.304 0 0 1-50.086 52.726z" fill="#343434" fill-rule="evenodd"></path></svg><span class="time_baking">20 min</span></div>
+                                                    </div>  
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="col-xs-12 col-md-4">
+                                                    <a href="#classic_plan"><img src="http://res.cloudinary.com/dx0ubgpga/image/upload/v1520193015/classic_plan/pork.jpg" alt="pork" class="img-responsive"></a>
+                                                    <div class="caption">
+                                                        <div class="legend"><span class="name_dish">Figgy Balsamic Pork</span><br> with Roasted Greens Beans and Rosemary Potatoes</div>
+                                                        <div class="time"><svg class="fela-1rtnddl" width="20" height="20" viewBox="0 0 512 512" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" aria-labelledby="a11y--id a11y--id-desc"><title id="a11y--id"></title><desc id="a11y--id-desc"></desc><path d="M255.992 64C150.137 64 64.008 150.13 64.008 256c0 105.869 86.13 192 191.985 192 105.87 0 192-86.131 192-192-.001-105.87-86.13-192-192.001-192zm49.92 294.21l13.635-7.875 20.641 35.76a159.565 159.565 0 0 1-13.614 7.89l-20.662-35.775zM411.033 256c0 2.654-.068 5.279-.195 7.875h-41.371v-15.736h41.371c.127 2.596.195 5.236.195 7.861zm-52.831-49.92l-7.875-13.621 35.76-20.624a150.122 150.122 0 0 1 7.875 13.62l-35.76 20.625zm-31.628-88.051a155.46 155.46 0 0 1 13.614 7.906l-20.641 35.76-13.635-7.89 20.662-35.776zm23.753 201.526l7.875-13.635 35.76 20.655a154.62 154.62 0 0 1-7.875 13.62l-35.76-20.64zm-164.902 74.43l20.655-35.775-13.627-7.875-20.647 35.744a156.064 156.064 0 0 1-45.893-45.885l35.752-20.639-7.867-13.635-35.767 20.655c-9.751-18.976-15.735-40.2-16.868-62.7h41.363v-15.736h-41.363c1.134-22.499 7.118-43.71 16.868-62.684l35.767 20.625 7.867-13.635-35.752-20.61a156.27 156.27 0 0 1 45.893-45.9l20.647 35.76 13.627-7.89-20.655-35.775c21.188-10.86 45.157-17.054 70.567-17.054v310.08c-25.41-.001-49.379-6.211-70.567-17.071z" fill="#343434" fill-rule="evenodd"></path></svg><span class="time_baking">30 min</span></div>
+                                                    </div> 
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="col-xs-12 col-md-4">
+                                                    <a href="#classic_plan"><img src="http://res.cloudinary.com/dx0ubgpga/image/upload/v1520193027/classic_plan/chicken_legs.jpg" alt="chickenLegs" class="img-responsive"></a>
+                                                    <div class="caption">
+                                                        <div class="legend"><span class="name_dish">Thai Lemongrass Chicken Legs</span><br> over Jasmin Rice and Snow Peas</div>
+                                                        <div class="time"><svg class="fela-1rtnddl" width="20" height="20" viewBox="0 0 512 512" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" aria-labelledby="a11y--id a11y--id-desc"><title id="a11y--id"></title><desc id="a11y--id-desc"></desc><path d="M256.008 64.015c-105.884 0-192 86.131-192 192 0 105.87 86.116 191.971 192 191.971 105.855 0 191.984-86.1 191.984-191.971 0-105.869-86.129-192-191.984-192zm130.08 107.79c2.849 4.41 5.474 8.94 7.875 13.62l-35.761 20.67-7.875-13.649 35.761-20.641zm-200.64 222.181c-4.696-2.43-9.256-5.041-13.621-7.921l20.641-35.729 6.811 3.929 56.729-98.25-134.13 77.804C109.805 313.034 102.417 289 101.186 264H142v-16h-40.818c1.095-22 7.051-43.706 16.841-62.799l35.79 20.782 7.86-13.593-35.73-20.613c11.896-18.329 27.54-33.945 45.885-45.856l20.641 35.737 13.604-7.858-20.628-35.758C206.609 107.153 231 100.975 256 100.975v155.039l-56.652 98.31 6.722 3.9-20.622 35.762zM264 410.845c-3 .12-5.352.21-7.992.21-2.641 0-5.008-.091-8.008-.21V369h16v41.845zm62.568-16.859l-20.641-35.79 13.606-7.86 20.655 35.729c-4.38 2.88-8.926 5.491-13.62 7.921zm-7.034-232.32l-13.606-7.861 20.641-35.76c4.694 2.401 9.239 5.01 13.62 7.89l-20.655 35.731zm66.554 178.529l-35.761-20.639 7.875-13.621 35.761 20.641a153.053 153.053 0 0 1-7.875 13.619zM369 264v-16h41.854c.12 3 .18 5.36.18 7.999 0 2.64-.06 5.001-.18 8.001H369z" fill="#343434" fill-rule="evenodd"></path></svg><span class="time_baking">40 min</span></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                    <div class="col-xs-12 col-md-4">
+                                                        <a href="#classic_plan"><img src="http://res.cloudinary.com/dx0ubgpga/image/upload/v1520193024/classic_plan/pork_cutlets.jpg" alt="cutlets" class="img-responsive"></a>
+                                                        <div class="caption">
+                                                            <div class="legend"><span class="name_dish">Maple and Rosemary-Glazed Pork Cutlets</span><br> with Apple Salad in a Creamy Dressing</div>
+                                                            <div class="time"><svg class="fela-1rtnddl" width="20" height="20" viewBox="0 0 512 512" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" aria-labelledby="a11y--id a11y--id-desc"><title id="a11y--id"></title><desc id="a11y--id-desc"></desc><path d="M256.008 64C150.122 64 63.992 150.13 63.992 255.985 63.992 361.87 150.122 448 256.008 448c105.869 0 192-86.13 192-192.015 0-105.855-86.131-191.985-192-191.985zm84.194 322.081l-20.655-35.746-13.606 7.875 20.641 35.76c-18.976 9.751-40.215 15.736-62.715 16.876v-41.371h-15.735v41.371c-22.501-1.14-43.725-7.126-62.701-16.876l20.641-35.76-13.604-7.86-20.641 35.73a156.032 156.032 0 0 1-45.9-45.9l35.746-20.641-7.875-13.62-35.761 20.655c-9.734-18.974-15.749-40.214-16.89-62.715h41.386v-15.735h-41.386c1.141-22.499 7.156-43.725 16.89-62.7l35.761 20.655 7.875-13.62-35.746-20.67a155.955 155.955 0 0 1 45.9-45.87l20.641 35.729 13.604-7.875-20.641-35.744c21.195-10.89 45.166-17.07 70.576-17.07v155.024l56.64-98.295-6.706-3.915 20.641-35.744c4.68 2.385 9.225 5.04 13.62 7.89l-20.655 35.729-6.811-3.929-56.729 98.264 98.204-56.804-3.869-6.72 35.744-20.67a155.93 155.93 0 0 1 7.906 13.635l-35.775 20.655-3.931-6.824-98.279 56.729 113.475-.074v-7.786h41.354c.151 2.596.226 5.235.226 7.86 0 2.64-.075 5.281-.226 7.875h-41.369l.015-7.875H256.008l134.28 77.371a156.304 156.304 0 0 1-50.086 52.726z" fill="#343434" fill-rule="evenodd"></path></svg><span class="time_baking">20 min</span></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="item">
+                                                    <div class="col-xs-12 col-md-4">
+                                                        <a href="#classic_plan"><img src="http://res.cloudinary.com/dx0ubgpga/image/upload/v1520193041/classic_plan/steack.jpg" alt="steak" class="img-responsive"></a>
+                                                        <div class="caption">
+                                                            <div class="legend"><span class="name_dish">New York Strip Steak with Truffle Butter</span><br> over Mashed Potatoes and Roasted Asparagus</div>
+                                                            <div class="time"><svg class="fela-1rtnddl" width="20" height="20" viewBox="0 0 512 512" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" aria-labelledby="a11y--id a11y--id-desc"><title id="a11y--id"></title><desc id="a11y--id-desc"></desc><path d="M256.008 64.015c-105.884 0-192 86.131-192 192 0 105.87 86.116 191.971 192 191.971 105.855 0 191.984-86.1 191.984-191.971 0-105.869-86.129-192-191.984-192zm130.08 107.79c2.849 4.41 5.474 8.94 7.875 13.62l-35.761 20.67-7.875-13.649 35.761-20.641zm-200.64 222.181c-4.696-2.43-9.256-5.041-13.621-7.921l20.641-35.729 6.811 3.929 56.729-98.25-134.13 77.804C109.805 313.034 102.417 289 101.186 264H142v-16h-40.818c1.095-22 7.051-43.706 16.841-62.799l35.79 20.782 7.86-13.593-35.73-20.613c11.896-18.329 27.54-33.945 45.885-45.856l20.641 35.737 13.604-7.858-20.628-35.758C206.609 107.153 231 100.975 256 100.975v155.039l-56.652 98.31 6.722 3.9-20.622 35.762zM264 410.845c-3 .12-5.352.21-7.992.21-2.641 0-5.008-.091-8.008-.21V369h16v41.845zm62.568-16.859l-20.641-35.79 13.606-7.86 20.655 35.729c-4.38 2.88-8.926 5.491-13.62 7.921zm-7.034-232.32l-13.606-7.861 20.641-35.76c4.694 2.401 9.239 5.01 13.62 7.89l-20.655 35.731zm66.554 178.529l-35.761-20.639 7.875-13.621 35.761 20.641a153.053 153.053 0 0 1-7.875 13.619zM369 264v-16h41.854c.12 3 .18 5.36.18 7.999 0 2.64-.06 5.001-.18 8.001H369z" fill="#343434" fill-rule="evenodd"></path></svg><span class="time_baking">40 min</span></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="item">
+                                                    <div class="col-xs-12 col-md-4">
+                                                        <a href="#classic_plan"><img src="http://res.cloudinary.com/dx0ubgpga/image/upload/v1520193020/classic_plan/burger.jpg" alt="burger" class="img-responsive"></a>
+                                                        <div class="caption">
+                                                            <div class="legend"><span class="name_dish">Banh MÎ Burger</span><br> with Vietamese-Style Lemongrass Pork and Sriracha Mayo</div>
+                                                            <div class="time"><svg class="fela-1rtnddl" width="20" height="20" viewBox="0 0 512 512" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" aria-labelledby="a11y--id a11y--id-desc"><title id="a11y--id"></title><desc id="a11y--id-desc"></desc><path d="M255.992 64C150.137 64 64.008 150.13 64.008 256c0 105.869 86.13 192 191.985 192 105.87 0 192-86.131 192-192-.001-105.87-86.13-192-192.001-192zm49.92 294.21l13.635-7.875 20.641 35.76a159.565 159.565 0 0 1-13.614 7.89l-20.662-35.775zM411.033 256c0 2.654-.068 5.279-.195 7.875h-41.371v-15.736h41.371c.127 2.596.195 5.236.195 7.861zm-52.831-49.92l-7.875-13.621 35.76-20.624a150.122 150.122 0 0 1 7.875 13.62l-35.76 20.625zm-31.628-88.051a155.46 155.46 0 0 1 13.614 7.906l-20.641 35.76-13.635-7.89 20.662-35.776zm23.753 201.526l7.875-13.635 35.76 20.655a154.62 154.62 0 0 1-7.875 13.62l-35.76-20.64zm-164.902 74.43l20.655-35.775-13.627-7.875-20.647 35.744a156.064 156.064 0 0 1-45.893-45.885l35.752-20.639-7.867-13.635-35.767 20.655c-9.751-18.976-15.735-40.2-16.868-62.7h41.363v-15.736h-41.363c1.134-22.499 7.118-43.71 16.868-62.684l35.767 20.625 7.867-13.635-35.752-20.61a156.27 156.27 0 0 1 45.893-45.9l20.647 35.76 13.627-7.89-20.655-35.775c21.188-10.86 45.157-17.054 70.567-17.054v310.08c-25.41-.001-49.379-6.211-70.567-17.071z" fill="#343434" fill-rule="evenodd"></path></svg><span class="time_baking">30 min</span></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="item">
+                                                    <div class="col-xs-12 col-md-4">
+                                                        <a href="#classic_plan"><img src="http://res.cloudinary.com/dx0ubgpga/image/upload/v1520193038/classic_plan/tilapia.jpg" alt="tilapia" class="img-responsive"></a>
+                                                        <div class="caption">
+                                                            <div class="legend"><span class="name_dish">Tilapia with Scallion Sriracha Pesto</span><br> over Ginger Jasmine Rice with Green Beans</div>
+                                                            <div class="time"><svg class="fela-1rtnddl" width="20" height="20" viewBox="0 0 512 512" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" aria-labelledby="a11y--id a11y--id-desc"><title id="a11y--id"></title><desc id="a11y--id-desc"></desc><path d="M255.992 64C150.137 64 64.008 150.13 64.008 256c0 105.869 86.13 192 191.985 192 105.87 0 192-86.131 192-192-.001-105.87-86.13-192-192.001-192zm49.92 294.21l13.635-7.875 20.641 35.76a159.565 159.565 0 0 1-13.614 7.89l-20.662-35.775zM411.033 256c0 2.654-.068 5.279-.195 7.875h-41.371v-15.736h41.371c.127 2.596.195 5.236.195 7.861zm-52.831-49.92l-7.875-13.621 35.76-20.624a150.122 150.122 0 0 1 7.875 13.62l-35.76 20.625zm-31.628-88.051a155.46 155.46 0 0 1 13.614 7.906l-20.641 35.76-13.635-7.89 20.662-35.776zm23.753 201.526l7.875-13.635 35.76 20.655a154.62 154.62 0 0 1-7.875 13.62l-35.76-20.64zm-164.902 74.43l20.655-35.775-13.627-7.875-20.647 35.744a156.064 156.064 0 0 1-45.893-45.885l35.752-20.639-7.867-13.635-35.767 20.655c-9.751-18.976-15.735-40.2-16.868-62.7h41.363v-15.736h-41.363c1.134-22.499 7.118-43.71 16.868-62.684l35.767 20.625 7.867-13.635-35.752-20.61a156.27 156.27 0 0 1 45.893-45.9l20.647 35.76 13.627-7.89-20.655-35.775c21.188-10.86 45.157-17.054 70.567-17.054v310.08c-25.41-.001-49.379-6.211-70.567-17.071z" fill="#343434" fill-rule="evenodd"></path></svg><span class="time_baking">30 min</span></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="item" id="veggie_plan">
+                                                    <div class="col-xs-12 col-md-4">
+                                                        <a href="#veggie_plan"><img src="http://res.cloudinary.com/dx0ubgpga/image/upload/v1520528898/veggie_plan/bolognese.jpg" alt="bolognese" class="img-responsive"></a>
+                                                        <div class="caption">
+                                                            <div class="legend"><span class="name_dish">Mighty Meatless Bolognese </span><br> with Italian Veggie Crumbles and Tagliatelle Paste</div>
+                                                            <div class="time"><svg class="fela-1rtnddl" width="20" height="20" viewBox="0 0 512 512" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" aria-labelledby="a11y--id a11y--id-desc"><title id="a11y--id"></title><desc id="a11y--id-desc"></desc><path d="M255.992 64C150.137 64 64.008 150.13 64.008 256c0 105.869 86.13 192 191.985 192 105.87 0 192-86.131 192-192-.001-105.87-86.13-192-192.001-192zm49.92 294.21l13.635-7.875 20.641 35.76a159.565 159.565 0 0 1-13.614 7.89l-20.662-35.775zM411.033 256c0 2.654-.068 5.279-.195 7.875h-41.371v-15.736h41.371c.127 2.596.195 5.236.195 7.861zm-52.831-49.92l-7.875-13.621 35.76-20.624a150.122 150.122 0 0 1 7.875 13.62l-35.76 20.625zm-31.628-88.051a155.46 155.46 0 0 1 13.614 7.906l-20.641 35.76-13.635-7.89 20.662-35.776zm23.753 201.526l7.875-13.635 35.76 20.655a154.62 154.62 0 0 1-7.875 13.62l-35.76-20.64zm-164.902 74.43l20.655-35.775-13.627-7.875-20.647 35.744a156.064 156.064 0 0 1-45.893-45.885l35.752-20.639-7.867-13.635-35.767 20.655c-9.751-18.976-15.735-40.2-16.868-62.7h41.363v-15.736h-41.363c1.134-22.499 7.118-43.71 16.868-62.684l35.767 20.625 7.867-13.635-35.752-20.61a156.27 156.27 0 0 1 45.893-45.9l20.647 35.76 13.627-7.89-20.655-35.775c21.188-10.86 45.157-17.054 70.567-17.054v310.08c-25.41-.001-49.379-6.211-70.567-17.071z" fill="#343434" fill-rule="evenodd"></path></svg><span class="time_baking">30 min</span></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="item">
+                                                        <div class="col-xs-12 col-md-4">
+                                                            <a href="#veggie_plan"><img src="http://res.cloudinary.com/dx0ubgpga/image/upload/v1520528903/veggie_plan/couscous.jpg" alt="couscous" class="img-responsive"></a>
+                                                            <div class="caption">
+                                                                <div class="legend"><span class="name_dish">Chickpea-Powered Mediterranean Couscous </span><br> with Zuchini and Heirloom Grape Tomatoes</div>
+                                                                <div class="time"><svg class="fela-1rtnddl" width="20" height="20" viewBox="0 0 512 512" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" aria-labelledby="a11y--id a11y--id-desc"><title id="a11y--id"></title><desc id="a11y--id-desc"></desc><path d="M255.992 64C150.137 64 64.008 150.13 64.008 256c0 105.869 86.13 192 191.985 192 105.87 0 192-86.131 192-192-.001-105.87-86.13-192-192.001-192zm49.92 294.21l13.635-7.875 20.641 35.76a159.565 159.565 0 0 1-13.614 7.89l-20.662-35.775zM411.033 256c0 2.654-.068 5.279-.195 7.875h-41.371v-15.736h41.371c.127 2.596.195 5.236.195 7.861zm-52.831-49.92l-7.875-13.621 35.76-20.624a150.122 150.122 0 0 1 7.875 13.62l-35.76 20.625zm-31.628-88.051a155.46 155.46 0 0 1 13.614 7.906l-20.641 35.76-13.635-7.89 20.662-35.776zm23.753 201.526l7.875-13.635 35.76 20.655a154.62 154.62 0 0 1-7.875 13.62l-35.76-20.64zm-164.902 74.43l20.655-35.775-13.627-7.875-20.647 35.744a156.064 156.064 0 0 1-45.893-45.885l35.752-20.639-7.867-13.635-35.767 20.655c-9.751-18.976-15.735-40.2-16.868-62.7h41.363v-15.736h-41.363c1.134-22.499 7.118-43.71 16.868-62.684l35.767 20.625 7.867-13.635-35.752-20.61a156.27 156.27 0 0 1 45.893-45.9l20.647 35.76 13.627-7.89-20.655-35.775c21.188-10.86 45.157-17.054 70.567-17.054v310.08c-25.41-.001-49.379-6.211-70.567-17.071z" fill="#343434" fill-rule="evenodd"></path></svg><span class="time_baking">30 min</span></div>
+                                                            </div>  
+                                                        </div>
+                                                </div>
+                                                <div class="item">
+                                                        <div class="col-xs-12 col-md-4">
+                                                            <a href="#veggie_plan"><img src="http://res.cloudinary.com/dx0ubgpga/image/upload/v1520528901/veggie_plan/mushroom.jpg" alt="mushroom" class="img-responsive"></a>
+                                                            <div class="caption">
+                                                                <div class="legend"><span class="name_dish">Smoky Stuffed Mushrooms</span><br> with Tomato Quinoa and Cheesy Breadcrumbs</div>
+                                                                <div class="time"><svg class="fela-1rtnddl" width="20" height="20" viewBox="0 0 512 512" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" aria-labelledby="a11y--id a11y--id-desc"><title id="a11y--id"></title><desc id="a11y--id-desc"></desc><path d="M255.992 64C150.137 64 64.008 150.13 64.008 256c0 105.869 86.13 192 191.985 192 105.87 0 192-86.131 192-192-.001-105.87-86.13-192-192.001-192zm49.92 294.21l13.635-7.875 20.641 35.76a159.565 159.565 0 0 1-13.614 7.89l-20.662-35.775zM411.033 256c0 2.654-.068 5.279-.195 7.875h-41.371v-15.736h41.371c.127 2.596.195 5.236.195 7.861zm-52.831-49.92l-7.875-13.621 35.76-20.624a150.122 150.122 0 0 1 7.875 13.62l-35.76 20.625zm-31.628-88.051a155.46 155.46 0 0 1 13.614 7.906l-20.641 35.76-13.635-7.89 20.662-35.776zm23.753 201.526l7.875-13.635 35.76 20.655a154.62 154.62 0 0 1-7.875 13.62l-35.76-20.64zm-164.902 74.43l20.655-35.775-13.627-7.875-20.647 35.744a156.064 156.064 0 0 1-45.893-45.885l35.752-20.639-7.867-13.635-35.767 20.655c-9.751-18.976-15.735-40.2-16.868-62.7h41.363v-15.736h-41.363c1.134-22.499 7.118-43.71 16.868-62.684l35.767 20.625 7.867-13.635-35.752-20.61a156.27 156.27 0 0 1 45.893-45.9l20.647 35.76 13.627-7.89-20.655-35.775c21.188-10.86 45.157-17.054 70.567-17.054v310.08c-25.41-.001-49.379-6.211-70.567-17.071z" fill="#343434" fill-rule="evenodd"></path></svg><span class="time_baking">30 min</span></div>
+                                                            </div>  
+                                                        </div>
+                                                </div>
+                                                <div class="item" id="family_plan">
+                                                        <div class="col-xs-12 col-md-4">
+                                                            <a href="#family_plan"><img src="http://res.cloudinary.com/dx0ubgpga/image/upload/v1520529036/family_plan/chicken_tacos.jpg" alt="chicken_tacos" class="img-responsive"></a>
+                                                            <div class="caption">
+                                                                <div class="legend"><span class="name_dish">Bulgogi Chicken Thigh Tacos</span><br> with Pickled Cucumbers and Sriracha Crema</div>
+                                                                <div class="time"><svg class="fela-1rtnddl" width="20" height="20" viewBox="0 0 512 512" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" aria-labelledby="a11y--id a11y--id-desc"><title id="a11y--id"></title><desc id="a11y--id-desc"></desc><path d="M256 64C150.13 64 64.008 150.13 64.008 256c0 105.869 86.122 192 191.992 192 105.863 0 191.992-86.131 191.992-192 0-105.87-86.129-192-191.992-192zM125.912 340.194l35.753-20.639-7.86-13.635-35.783 20.655c-9.743-18.976-15.742-40.2-16.853-62.7h41.363v-15.736H101.17c1.111-22.499 7.11-43.71 16.853-62.684l35.783 20.625 7.86-13.635-35.753-20.61c11.902-18.346 27.571-33.99 45.893-45.9l20.648 35.76 13.62-7.89-20.655-35.775c21.195-10.86 45.165-17.054 70.582-17.054V256l56.648-98.31-6.743-3.886 20.67-35.775a155.323 155.323 0 0 1 13.606 7.906l-20.641 35.76-6.817-3.96L256 256l98.212-56.806-3.892-6.735 35.767-20.639a154.71 154.71 0 0 1 7.875 13.635l-35.767 20.625-3.937-6.811L256 256l113.467-.091v-7.771h41.371c.12 2.596.194 5.236.194 7.861 0 2.654-.074 5.279-.194 7.875h-41.371V256H256l98.31 56.654 3.885-6.734 35.767 20.655a156.649 156.649 0 0 1-7.875 13.62l-35.767-20.639 3.938-6.795L256 256l77.084 134.414c-20.595 11.866-44.106 19.171-69.217 20.43v-41.355h-15.742v41.355c-22.493-1.124-43.71-7.125-62.707-16.859l20.655-35.775-13.62-7.875-20.648 35.744a156.064 156.064 0 0 1-45.893-45.885z" fill="#343434" fill-rule="evenodd"></path></svg><span class="time_baking">25 min</span></div>
+                                                            </div>  
+                                                        </div>
+                                                </div>
+                                                <div class="item">
+                                                        <div class="col-xs-12 col-md-4">
+                                                            <a href="#family_plan"><img src="http://res.cloudinary.com/dx0ubgpga/image/upload/v1520529035/family_plan/maple_chicken.jpg" alt="maple_chicken" class="img-responsive"></a>
+                                                            <div class="caption">
+                                                                <div class="legend"><span class="name_dish">Maple-Glazed Chicken</span><br> with Sweet Potato Mash and Green Beans</div>
+                                                                <div class="time"><svg class="fela-1rtnddl" width="20" height="20" viewBox="0 0 512 512" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" aria-labelledby="a11y--id a11y--id-desc"><title id="a11y--id"></title><desc id="a11y--id-desc"></desc><path d="M256.008 64.015c-105.884 0-192 86.131-192 192 0 105.87 86.116 191.971 192 191.971 105.855 0 191.984-86.1 191.984-191.971 0-105.869-86.129-192-191.984-192zm130.08 107.79c2.849 4.41 5.474 8.94 7.875 13.62l-35.761 20.67-7.875-13.649 35.761-20.641zm-200.64 222.181c-4.696-2.43-9.256-5.041-13.621-7.921l20.641-35.729 6.811 3.929 56.729-98.25-134.13 77.804C109.805 313.034 102.417 289 101.186 264H142v-16h-40.818c1.095-22 7.051-43.706 16.841-62.799l35.79 20.782 7.86-13.593-35.73-20.613c11.896-18.329 27.54-33.945 45.885-45.856l20.641 35.737 13.604-7.858-20.628-35.758C206.609 107.153 231 100.975 256 100.975v155.039l-56.652 98.31 6.722 3.9-20.622 35.762zM264 410.845c-3 .12-5.352.21-7.992.21-2.641 0-5.008-.091-8.008-.21V369h16v41.845zm62.568-16.859l-20.641-35.79 13.606-7.86 20.655 35.729c-4.38 2.88-8.926 5.491-13.62 7.921zm-7.034-232.32l-13.606-7.861 20.641-35.76c4.694 2.401 9.239 5.01 13.62 7.89l-20.655 35.731zm66.554 178.529l-35.761-20.639 7.875-13.621 35.761 20.641a153.053 153.053 0 0 1-7.875 13.619zM369 264v-16h41.854c.12 3 .18 5.36.18 7.999 0 2.64-.06 5.001-.18 8.001H369z" fill="#343434" fill-rule="evenodd"></path></svg><span class="time_baking">40 min</span></div>
+                                                            </div>  
+                                                        </div>
+                                                </div>
+                                                <div class="item">
+                                                        <div class="col-xs-12 col-md-4">
+                                                            <a href="#family_plan"><img src="http://res.cloudinary.com/dx0ubgpga/image/upload/v1520529035/family_plan/meatballs.jpg" alt="meatballs" class="img-responsive"></a>
+                                                            <div class="caption">
+                                                                <div class="legend"><span class="name_dish">Hoisin-Glazed Meatballs</span><br> with Jasmine Rice and Snow Peas</div>
+                                                                <div class="time"><svg class="fela-1rtnddl" width="20" height="20" viewBox="0 0 512 512" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" aria-labelledby="a11y--id a11y--id-desc"><title id="a11y--id"></title><desc id="a11y--id-desc"></desc><path d="M256 64C150.13 64 64.008 150.145 64.008 256.014 64.008 361.884 150.13 448 256 448c105.863 0 191.992-86.116 191.992-191.986C447.992 150.145 361.863 64 256 64zm49.92 294.21l13.627-7.861 20.641 35.746a158.626 158.626 0 0 1-13.613 7.89L305.92 358.21zm105.121-102.196c0 2.625-.075 5.265-.203 7.861h-41.371v-15.721h41.371c.128 2.581.203 5.221.203 7.86zm-52.846-49.92l-7.867-13.635 35.753-20.639a155.255 155.255 0 0 1 7.889 13.62l-35.775 20.654zm-31.62-88.065a153.132 153.132 0 0 1 13.613 7.906l-20.641 35.744-13.627-7.875 20.655-35.775zm23.752 201.54l7.867-13.635 35.775 20.641a155.368 155.368 0 0 1-7.889 13.635l-35.753-20.641zM125.921 340.21l35.744-20.641-7.86-13.635-35.783 20.641c-9.743-18.976-15.727-40.2-16.861-62.7h41.371v-15.721h-41.371c1.134-22.515 7.118-43.739 16.861-62.715l35.783 20.655 7.86-13.635-35.744-20.639a156.029 156.029 0 0 1 45.893-45.885l20.647 35.744 13.62-7.875-20.655-35.775c21.188-10.86 45.172-17.054 70.575-17.054v155.039l-77.37 134.265a156.096 156.096 0 0 1-52.71-50.069zm122.212 70.634v-41.355h15.735v41.355c-2.602.135-5.227.21-7.867.21s-5.251-.075-7.868-.21z" fill="#343434" fill-rule="evenodd"></path></svg><span class="time_baking">25 min</span></div>
+                                                            </div>  
+                                                        </div>
+                                                </div>
+                                                <div class="item">
+                                                        <div class="col-xs-12 col-md-4">
+                                                            <a href="#family_plan"><img src="http://res.cloudinary.com/dx0ubgpga/image/upload/v1520529036/family_plan/fajita.jpg" alt="fajita" class="img-responsive"></a>
+                                                            <div class="caption">
+                                                                <div class="legend"><span class="name_dish">Fun-Day Fajita Bar</span><br> with Southwestern Pork, Onions and Bell Peppers</div>
+                                                                <div class="time"><svg class="fela-1rtnddl" width="20" height="20" viewBox="0 0 512 512" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" aria-labelledby="a11y--id a11y--id-desc"><title id="a11y--id"></title><desc id="a11y--id-desc"></desc><path d="M255.992 64C150.137 64 64.008 150.13 64.008 256c0 105.869 86.13 192 191.985 192 105.87 0 192-86.131 192-192-.001-105.87-86.13-192-192.001-192zm49.92 294.21l13.635-7.875 20.641 35.76a159.565 159.565 0 0 1-13.614 7.89l-20.662-35.775zM411.033 256c0 2.654-.068 5.279-.195 7.875h-41.371v-15.736h41.371c.127 2.596.195 5.236.195 7.861zm-52.831-49.92l-7.875-13.621 35.76-20.624a150.122 150.122 0 0 1 7.875 13.62l-35.76 20.625zm-31.628-88.051a155.46 155.46 0 0 1 13.614 7.906l-20.641 35.76-13.635-7.89 20.662-35.776zm23.753 201.526l7.875-13.635 35.76 20.655a154.62 154.62 0 0 1-7.875 13.62l-35.76-20.64zm-164.902 74.43l20.655-35.775-13.627-7.875-20.647 35.744a156.064 156.064 0 0 1-45.893-45.885l35.752-20.639-7.867-13.635-35.767 20.655c-9.751-18.976-15.735-40.2-16.868-62.7h41.363v-15.736h-41.363c1.134-22.499 7.118-43.71 16.868-62.684l35.767 20.625 7.867-13.635-35.752-20.61a156.27 156.27 0 0 1 45.893-45.9l20.647 35.76 13.627-7.89-20.655-35.775c21.188-10.86 45.157-17.054 70.567-17.054v310.08c-25.41-.001-49.379-6.211-70.567-17.071z" fill="#343434" fill-rule="evenodd"></path></svg><span class="time_baking">30 min</span></div>
+                                                            </div>  
+                                                        </div>
+                                                </div>
+                                                <div class="item">
+                                                        <div class="col-xs-12 col-md-4">
+                                                            <a href="#family_plan"><img src="http://res.cloudinary.com/dx0ubgpga/image/upload/v1520529035/family_plan/stuffed_peppers.jpg" alt="peppers" class="img-responsive"></a>
+                                                            <div class="caption">
+                                                                <div class="legend"><span class="name_dish">Slow Cooker Stuffed Peppers</span><br> with Chicken Sausage, Basmati Rice, and Italian Cheese</div>
+                                                                <div class="time"><span class="time_baking">480 min</span></div>
+                                                            </div>  
+                                                        </div>
+                                                </div>
+                                        </div>
+                                        <a class="left carousel-control" href="#theCarousel" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
+                                        <a class="right carousel-control" href="#theCarousel" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
+                                    </div>
+                                </div>
+                        </div>
+                                    
 
                     <hr>
-                    
-                    <div>
 
-                    </div>
-
-                    <div>
-                        <figure>
-                            <img src="http://res.cloudinary.com/dx0ubgpga/image/upload/v1519990086/tacos_tbi8dx.jpg" alt="tacos">
-                            <a href="#" class="button_left"><img src="images/button_left.png" alt="" /></a>
-                            <a href="#" class="button_right"><img src="images/button_right.png" alt=""/></a>
-                            <figcaption>
-                                <div class="legend"><span class="name_dish">Tacos al Pastor</span><br> with Chorizo Veggie Crumbles, Poblano, and Sour Cream</div>
-                                <div class="time"></div>
-                            </figcaption>
-                            <hr>  
-                        </figure>
-                    </div>
-                        
-                    </div>
-
-                    <div class="button_plans1">
-                        <p><a href="#plans">View our plans</a></p>
-                    </div>
+                        <div class="row button_plans">
+                                <div class="col-md-12">
+                                    <div class="button_plans1">
+                                        <a href="#plans"><button type="button" class="btn btn-secondary btn-lg center-block">View our plans</button></a>
+                                    </div>
+                                </div>
+                        </div>
 
             </section>
             
@@ -204,95 +390,90 @@
             
             <section class="twitter_section">
                 <h1>A little bit of HelloFresh love</h1>
-                <div>
-                    <div class="tweet1">
-                        <blockquote class="twitter-tweet" data-lang="fr"><p lang="en" dir="ltr"><a href="https://twitter.com/HelloFresh?ref_src=twsrc%5Etfw">@HelloFresh</a> just got home to this 😁<a href="https://twitter.com/hashtag/hellofresh?src=hash&amp;ref_src=twsrc%5Etfw">#hellofresh</a> <a href="https://twitter.com/hashtag/chefmaddie?src=hash&amp;ref_src=twsrc%5Etfw">#chefmaddie</a> <a href="https://t.co/5kvLaxoIKg">pic.twitter.com/5kvLaxoIKg</a></p>&mdash; Andy Whiteside (@ADWhiteside) <a href="https://twitter.com/ADWhiteside/status/969354285208297472?ref_src=twsrc%5Etfw">1 mars 2018</a></blockquote>
+                <div class="row tweets">
+                    <div class="col-md-4 tweet1">
+                        <blockquote class="twitter-tweet" data-cards="hidden" data-lang="fr"><p lang="en" dir="ltr">Taking a break from sweets tonight to make a <a href="https://twitter.com/HelloFresh?ref_src=twsrc%5Etfw">@HelloFresh</a> dinner for me &amp; my mom... Pineapple Poblano Beef Tacos... Yum!👩🏻‍🍳🌮🍅🌶 <a href="https://twitter.com/hashtag/bakedbyo?src=hash&amp;ref_src=twsrc%5Etfw">#bakedbyo</a> <a href="https://twitter.com/hashtag/hellofreshpics?src=hash&amp;ref_src=twsrc%5Etfw">#hellofreshpics</a> <a href="https://twitter.com/hashtag/kidchef?src=hash&amp;ref_src=twsrc%5Etfw">#kidchef</a> <a href="https://twitter.com/hashtag/kidbaker?src=hash&amp;ref_src=twsrc%5Etfw">#kidbaker</a> <a href="https://twitter.com/hashtag/foodnetwork?src=hash&amp;ref_src=twsrc%5Etfw">#foodnetwork</a> <a href="https://twitter.com/hashtag/choppedjr?src=hash&amp;ref_src=twsrc%5Etfw">#choppedjr</a> <a href="https://twitter.com/hashtag/choppedjunior?src=hash&amp;ref_src=twsrc%5Etfw">#choppedjunior</a> <a href="https://twitter.com/hashtag/kidsbakingchampionship?src=hash&amp;ref_src=twsrc%5Etfw">#kidsbakingchampionship</a> <a href="https://twitter.com/hashtag/tacos?src=hash&amp;ref_src=twsrc%5Etfw">#tacos</a> <a href="https://twitter.com/hashtag/pablano?src=hash&amp;ref_src=twsrc%5Etfw">#pablano</a> <a href="https://twitter.com/hashtag/tacotuesday?src=hash&amp;ref_src=twsrc%5Etfw">#tacotuesday</a> <a href="https://twitter.com/hashtag/chef?src=hash&amp;ref_src=twsrc%5Etfw">#chef</a> <a href="https://t.co/LewYR7cgqV">pic.twitter.com/LewYR7cgqV</a></p>&mdash; Baked By Olivia (@BakedByO) <a href="https://twitter.com/BakedByO/status/971150596031082496?ref_src=twsrc%5Etfw">6 mars 2018</a></blockquote>
                     </div>
-                    <div class="tweet2">
-                        <blockquote class="twitter-tweet" data-lang="fr"><p lang="en" dir="ltr">So far, so good with our <a href="https://twitter.com/HelloFresh?ref_src=twsrc%5Etfw">@HelloFresh</a> meals. Last night was the mushroom ravioli. Tonight’s menu: pineapple pork chops. 🤗 <a href="https://twitter.com/hashtag/HelloFresh?src=hash&amp;ref_src=twsrc%5Etfw">#HelloFresh</a> <a href="https://t.co/hgz9ImYDxD">pic.twitter.com/hgz9ImYDxD</a></p>&mdash; Eric Bylenok (@Kev_Emo) <a href="https://twitter.com/Kev_Emo/status/967215963258216448?ref_src=twsrc%5Etfw">24 février 2018</a></blockquote>
+                        <div class="col-md-4 tweet2">
+                        <blockquote class="twitter-tweet" data-cards="hidden" data-lang="fr"><p lang="en" dir="ltr">So <a href="https://twitter.com/HelloFresh?ref_src=twsrc%5Etfw">@HelloFresh</a> might be one of the most awesome things I&#39;ve stumbled upon! I can freaking cook! And since using it (about a month and a half) I&#39;ve lost 10 pounds because I&#39;m not eating crap/take out all the time. :-9 yum!! <a href="https://t.co/Wf8BrIUBPz">pic.twitter.com/Wf8BrIUBPz</a></p>&mdash; Jenn @ Voltron S5!!! (@Jennlikesthings) <a href="https://twitter.com/Jennlikesthings/status/970865726130069505?ref_src=twsrc%5Etfw">6 mars 2018</a></blockquote>
                     </div>
-                    <div class="tweet3">
-                        <blockquote class="twitter-tweet" data-lang="fr"><p lang="en" dir="ltr">Today&#39;s <a href="https://twitter.com/HelloFresh?ref_src=twsrc%5Etfw">@HelloFresh</a> is Pineapple Pork Chops. I even have half a shallot let over because the one they gave me was huge. <a href="https://t.co/x7VxrEuQXF">pic.twitter.com/x7VxrEuQXF</a></p>&mdash; No Inside Voice (@Denveresque) <a href="https://twitter.com/Denveresque/status/966796790887464960?ref_src=twsrc%5Etfw">22 février 2018</a></blockquote>     
+                    <div class="col-md-4 tweet3">
+                        <blockquote class="twitter-tweet" data-cards="hidden" data-lang="fr"><p lang="en" dir="ltr">Tex Mex Tilapia with couscous and green beans. And green muscles as an app. Not a bad night. Cant recommend <a href="https://twitter.com/HelloFresh?ref_src=twsrc%5Etfw">@HelloFresh</a> enough. (Muscles not included lol) <a href="https://twitter.com/hashtag/seafoodnight?src=hash&amp;ref_src=twsrc%5Etfw">#seafoodnight</a> <a href="https://twitter.com/hashtag/hellofresh?src=hash&amp;ref_src=twsrc%5Etfw">#hellofresh</a> <a href="https://twitter.com/hashtag/delicious?src=hash&amp;ref_src=twsrc%5Etfw">#delicious</a> <a href="https://t.co/Rda9HxRRXd">pic.twitter.com/Rda9HxRRXd</a></p>&mdash; WhySoGeeky??? (@WhySoGeeky) <a href="https://twitter.com/WhySoGeeky/status/969042211575705601?ref_src=twsrc%5Etfw">1 mars 2018</a></blockquote>
                     </div>
                 </div>
             </section>
             
             <section class="plans">
-                <div class="flexible_plans">
-                    <h1>Flexible Plans</h1>
-                    <p>Skip weeks, swap recipes, and cancel anytime - only order what and when you want. No commitments.</p>
-                    <div class="button_plans2">
-                        <p><a href="#plans">View our plans</a></p>
-                    </div>
+                <div class=" row flexible_plans">
+                        <div class="col-xs-12 flex_plans">
+                            <h1>Flexible Plans</h1>
+                            <p>Skip weeks, swap recipes, and cancel anytime - only order what </br> and when you want. No commitments.</p>
+                            <div class="button_plans2">
+                                <a href="#plans"><button type="button" class="btn btn-secondary btn-lg center-block">View our plans</button></a>
+                            </div>
+                        </div>
                 </div>
             </section>
             
             <!--footer-->
             <footer>
-                <div class="footer_p1">
-                    <div class="menu_footer">
-                        <div class="hellofresh">
-                            <ul>
-                                <li><span class="title_footer">Hellofresh</span></li>
+                <div class="row footer_p1">
+                    <div class="col-md-2 hellofresh">
+                        <ul>
+                            <li><span class="title_footer">Hellofresh</span></li>
                             <li><a href="#students">Students</a></li>
                             <li><a href="#blog">Blog</a></li>
                             <li><a href="#recipes">Recipes</a></li>
                         </ul>
-                        </div>
-                        <div class="our_company">
-                            <ul>
+                    </div>
+                    <div class="col-md-2 our_company">
+                        <ul>
                             <li><span class="title_footer">Our company</span></li>
                             <li><a href="#hellofresh_group">HelloFresh Group</a></li>
                             <li><a href="#jobs">Jobs</a></li>
                             <li><a href="#press">Press</a></li>
                         </ul> 
-                        </div>
-                        <div class="help_center">
-                            <ul>
+                    </div>
+                    <div class="col-md-2 help_center">
+                        <ul>
                             <li><span class="title_footer">Help center</span></li>
                             <li><a href="#help">Help</a></li>
                             <li><a href="#contact">Contact</a></li>
                         </ul> 
-                        </div>
                     </div>
-                    <div class="download_app">
+                    <div class="col-md-3 col-md-offset-3 download_app">
                         <div class="button_download">
-                            <p><a href="#download_app">Download our app</a></p>
+                            <a href="#download_app"><button type="button" class="btn btn-secondary btn-lg center-block">Download our app</button></a>
                         </div>
                     </div>
                 </div>
                 
                 <hr>
                 
-                <div class="footer_p2">
-                    <div class="brand">
+                <div class="row footer_p2">
+                    <div class="col-md-2 col-xs-12 brand center-block">
                         <p>&copy; HelloFresh 2018</p>
                     </div>
-                    <div class="terms_privacy">
-                        <p><a href="#terms">Terms and Conditions</a></p>
-                        <p><a href="#privacy">Privacy</a></p>
+                    <div class="col-md-4 col-xs-12  terms_privacy center-block">
+                        <p><a href="#terms">Terms and Conditions</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#privacy">Privacy</a></p>
                     </div>
-                    <div class="social_buttons">
-                            <a href="https://www.facebook.com/HelloFreshus?redirectedFromAccountArea=true" target="_blank"><img src="img/facebook-small.png" alt="facebook"/></a>
-                            <a href="https://twitter.com/HelloFresh?redirectedFromAccountArea=true" target="_blank"><img src="img/twitter-small.png" alt="twitter"/></a>
-                            <a href="https://www.instagram.com/hellofresh/?redirectedFromAccountArea=true" target="_blank"><img src="img/instagram-small.png" alt="instagram"/></a>
+                    <div class="col-md-2 col-xs-12 col-md-offset-4  social_buttons">
+                        <ul>
+                            <li><a href="https://www.facebook.com/HelloFreshus?redirectedFromAccountArea=true" target="_blank"><svg class="fela-1rtnddl" width="24" height="23.04" viewBox="0 0 25 24" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" aria-labelledby="a11y-Facebook-id a11y-Facebook-id-desc" data-reactid="123"><title id="a11y-Facebook-id" data-reactid="124">Facebook</title><desc id="a11y-Facebook-id-desc" data-reactid="125"></desc><path d="M.504 0A.504.504 0 0 0 0 .503v22.992c0 .278.226.504.504.504h12.232v-8.02h-2.581a.403.403 0 0 1-.404-.403v-3.25c0-.223.18-.404.404-.404h2.582V9.678c0-2.956 1.864-4.867 4.748-4.867l2.569.005c.222 0 .403.18.403.403v3.018c0 .223-.18.404-.404.404h-1.73c-1.192 0-1.41.465-1.41 1.379v1.902h3.02a.404.404 0 0 1 .403.403v3.252c0 .222-.181.403-.405.403h-3.018V24h6.614a.504.504 0 0 0 .504-.503V.503A.503.503 0 0 0 23.527 0H.504z" fill="#91c11e" fill-rule="evenodd" data-reactid="126"></path></svg></a></li>
+                            <li><a href="https://twitter.com/HelloFresh?redirectedFromAccountArea=true" target="_blank"><svg class="fela-1rtnddl" width="32" height="23.272727272727273" viewBox="0 0 33 24" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" aria-labelledby="a11y-Twitter-id a11y-Twitter-id-desc" data-reactid="128"><title id="a11y-Twitter-id" data-reactid="129">Twitter</title><desc id="a11y-Twitter-id-desc" data-reactid="130"></desc><path d="M28.628 3.795c1.37-.75 2.422-1.936 2.918-3.352a14.097 14.097 0 0 1-4.217 1.47C26.118.736 24.392 0 22.48 0c-3.667 0-6.64 2.713-6.64 6.059 0 .474.058.937.172 1.38-5.521-.253-10.415-2.664-13.69-6.33a5.626 5.626 0 0 0-.899 3.046c0 2.102 1.172 3.957 2.955 5.043A7.103 7.103 0 0 1 1.37 8.44c-.002.025-.002.05-.002.076 0 2.936 2.29 5.384 5.329 5.942a7.273 7.273 0 0 1-3 .103c.845 2.407 3.298 4.159 6.204 4.208-2.272 1.625-5.136 2.594-8.247 2.594-.537 0-1.066-.029-1.585-.085C3.01 22.997 6.5 24 10.25 24c12.216 0 18.896-9.232 18.896-17.239 0-.262-.006-.523-.02-.783a12.906 12.906 0 0 0 3.315-3.137 14.311 14.311 0 0 1-3.813.954z" fill="#91c11e" fill-rule="evenodd" data-reactid="131"></path></svg></a></li>
+                            <li><a href="https://www.instagram.com/hellofresh/?redirectedFromAccountArea=true" target="_blank"><svg class="fela-1rtnddl" width="26" height="23.11111111111111" viewBox="0 0 27 24" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" aria-labelledby="a11y-Instagram-id a11y-Instagram-id-desc" data-reactid="133"><title id="a11y-Instagram-id" data-reactid="134">Instagram</title><desc id="a11y-Instagram-id-desc" data-reactid="135"></desc><g fill="#91c11e" fill-rule="evenodd" data-reactid="136"><path d="M15.83 12.213c0-1.294-1.14-2.338-2.539-2.338-1.398 0-2.546 1.05-2.546 2.338 0 1.295 1.14 2.346 2.546 2.346 1.405.007 2.54-1.051 2.54-2.346zM19.618.013H6.693C3.133.013.238 2.681.238 5.96v1.656h9.5a6.458 6.458 0 0 1 3.553-1.052c1.327 0 2.54.395 3.552 1.052H26.066V5.959c0-3.272-2.889-5.946-6.448-5.946zm2.61 5.657c0 .361-.32.657-.72.657h-2.21c-.393 0-.714-.296-.714-.657V3.633c0-.361.32-.657.713-.657h2.211c.393 0 .72.296.72.657V5.67z" data-reactid="137"></path><path d="M19.418 12.213c0 3.115-2.746 5.65-6.134 5.65-3.388 0-6.134-2.529-6.134-5.65 0-.854.206-1.668.584-2.398H.244v8.134c0 3.278 2.897 5.946 6.456 5.946h12.91c3.56 0 6.456-2.668 6.456-5.946V9.815h-7.233c.371.73.585 1.544.585 2.398z" data-reactid="138"></path></g></svg></a></li>
+                        </ul>
                     </div>
-                </div>    
+                </div>
+       
             </footer>
         </div>
 
         <!--fichiers javascript et jquery-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
         <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-
-
-
-
-
-
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-</body>
+        <script src="js/hellofresh.js"></script>   
+    </body>
 </html>

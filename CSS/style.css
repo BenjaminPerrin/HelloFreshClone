@@ -1,3 +1,5 @@
+/*Importation police de caractères*/
+
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 /* debut nav*/
@@ -9,51 +11,216 @@
 .navbarL{
 			cursor: pointer;
 
+@media screen and (max-width: 767px) {
+    .tweet2{
+            display:none;
+    }
+    .tweet3{
+        display:none;
 }
-a:link {
-    color: #343434;
-    font-size: 16px;
+}
+
+/*body*/
+
+body{
     font-family: 'Source Sans Pro', sans-serif;
 }
-#HFlogo{
-	width: 80px;
-	height: 70px;
+
+h1, h2, h3, h4, h5 {
+    color: #444747;
+    text-align: center;
 }
 
-/* dropdown on mouseover */
-.dropdown:hover .dropdown-menu {
-  display: block;
-}
-/* switch arrow + rotate dropdown*/
-.drop-cursor-t{
-	cursor: text;
-}
-.dropdown.dropdown-item a:link{
-	cursor: text;
-}
-.dropdown img{
-	transition: transform 0.3;
-	transition: 0.3s;
+/*Section Weekly menus*/
 
+/*carousel date*/
+#myCarousel h1{
+    max-height: 50px;
 }
-.LinkOver:hover a:link{
-	color: #91c11e;
-}
-.dropdown:hover img{
-	transform: rotate(-180deg);
 
+.date_week .glyphicon{
+    padding-left: 100%;
+    padding-right: 100%;
+    color: #444747;
 }
-.navbar-right{
-		cursor: pointer;
 
+
+/*pills (type de menus)*/
+
+.nav-justified{
+    padding:0% 15% 5% 15% ;
 }
-.navbar-right a:link{
-	color: #91c11e;
-	font-size: 14px;
-	letter-spacing: -0.3px;
-	font-weight: 400;
-    font-family: 'Montserrat', sans-serif;
+
+.nav-pills li a{
+    color:black;
+    background-color: white;
+    font-size: 18px;
 }
+
+.nav-pills .active a{
+    color: #8fc400 !important;
+    border-bottom:#8fc400 solid 4px;
+    background-color: white !important;
+}
+
+.type_menu{
+    margin-right: 12%;
+    margin-left: 12%;
+}
+
+
+/*Carousel des plats*/
+
+.multi-item-carousel .carousel-inner > .item {
+    -webkit-transition: 500ms ease-in-out left;
+    transition: 500ms ease-in-out left;
+  }
+
+  .multi-item-carousel .carousel-inner .active.left {
+    left: -33%;
+  }
+
+  .multi-item-carousel .carousel-inner .active.right {
+    left: 33%;
+  }
+
+  .multi-item-carousel .carousel-inner .next {
+    left: 33%;
+  }
+
+  .multi-item-carousel .carousel-inner .prev {
+    left: -33%;
+  }
+
+  @media all and (transform-3d), (-webkit-transform-3d) {
+    .multi-item-carousel .carousel-inner > .item {
+      -webkit-transition: 500ms ease-in-out left;
+      transition: 500ms ease-in-out left;
+      -webkit-transition: 500ms ease-in-out all;
+      transition: 500ms ease-in-out all;
+      -webkit-backface-visibility: visible;
+              backface-visibility: visible;
+      -webkit-transform: none!important;
+              transform: none!important;
+    }
+  }
+
+.multi-item-carousel .carouse-control.left,
+.multi-item-carousel .carouse-control.right {
+    background-image: none;
+}
+
+.name_dish{
+    font-weight: bold;
+}
+
+.caption{
+    margin-top: 1.5%;
+}
+
+
+/*caption version smarthone*/
+@media screen and (max-width: 767px) {
+    .caption{
+            display:none;
+    }
+}
+
+.time{
+    float:right;
+}
+
+.legend{
+    float: left;
+    width: 82%;
+}
+
+
+
+/*Bouton section plats*/
+
+.button_plans button{
+    background-color:#8fc400;
+    color: white;
+    text-transform: uppercase;
+    padding: 1% 7%;
+}
+
+/*Section Twitter*/
+
+.twitter_section{
+    margin-bottom: 3%;
+}
+
+/*Section Flexible plans*/
+
+.plans{
+    background-image: url('http://res.cloudinary.com/dx0ubgpga/image/upload/v1520435400/Homepage-Footer-Flexible-1200x400_qdw1cc.jpg');
+    background-size: cover;
+    height: 300px;
+}
+
+.flexible_plans h1{
+    padding-top: 2%;
+    padding-bottom: 1.5%;
+   }
+
+.flexible_plans p{
+ text-align: center;
+ font-size: 16px;
+ padding-bottom: 3%;
+}
+
+.flexible_plans button{
+    background-color:#8fc400;
+    color: white;
+    text-transform: uppercase;
+}
+
+
+/*Footer 1*/
+
+.footer_p1{
+    margin-top: 4%;
+}
+
+.footer_p1 ul li{
+    list-style-type: none;
+}
+
+.footer_p1 a{
+    color:#444747;
+}
+
+.title_footer{
+    color:#8fc400;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.download_app button{
+    background-color:white;
+    color: #8fc400;
+    border: 1px solid #8fc400;
+}
+
+/*Footer 2*/
+
+.brand p{
+    color:#CFD3D4;
+}
+
+.terms_privacy a{
+    color: #AEB3B5;
+}
+
+.footer_p2 ul li{
+    list-style-type: none;
+    display: inline;
+}
+
+/*Chatbox*/
+=======
 .RLinkOver:hover a:link{
 	color: #659a41;
 }
@@ -162,3 +329,4 @@ background-image: url(https://res.cloudinary.com/hellofresh/image/upload/f_auto,
 	
 	background-image: url(https://res.cloudinary.com/hellofresh/image/upload/c_fill,f_auto,fl_lossy,h…54/v1/hellofresh_website/us/cms/lentil/delicious/what-you-get_1199x450.jpg);
 }
+
