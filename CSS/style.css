@@ -19,7 +19,10 @@ a:link {
 	width: 80px;
 	height: 70px;
 }
-
+#navbarDropdownMenuLink{
+text-decoration: none;
+color: black;
+}
 /* dropdown on mouseover */
 .dropdown:hover .dropdown-menu {
   display: block;
