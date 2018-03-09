@@ -23,6 +23,15 @@ a:link {
 text-decoration: none;
 color: black;
 }
+
+#login{
+	font-weight: 400;
+	font-weight: bold;
+    font-family: Montserrat;
+	color: #91c11e;
+    font-size: 14px;
+    line-height: 16px;
+}
 /* dropdown on mouseover */
 .dropdown:hover .dropdown-menu {
   display: block;
