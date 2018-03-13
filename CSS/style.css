@@ -113,6 +113,7 @@ background-image: url(https://res.cloudinary.com/hellofresh/image/upload/f_auto,
     padding-left: 20px;
     padding-right: 20px;
     font-weight: 400;
+    font-weight: bold;
     font-family: Montserrat;
     letter-spacing: -0.3px;
     min-width: 120px;
@@ -127,6 +128,7 @@ background-image: url(https://res.cloudinary.com/hellofresh/image/upload/f_auto,
     padding-bottom: 15px;
     text-transform: uppercase;
     display: inline-block;
+    margin-top: 10px;
 
 }
 
@@ -161,17 +163,37 @@ background-image: url(https://res.cloudinary.com/hellofresh/image/upload/f_auto,
     font-family: Montserrat;
     font-weight: bold;
     padding: 10px;
+    margin-bottom: 30px;
 
 }
 
 /* What */
-
-#what{
-	height:100%;
-	
-	background-image: url(https://res.cloudinary.com/hellofresh/image/upload/c_fill,f_auto,fl_lossy,h…54/v1/hellofresh_website/us/cms/lentil/delicious/what-you-get_1199x450.jpg);
+croixtop{
+margin-top: 2px;
 }
-
+#what{
+    
+	height:450px;
+}
+#backgroundimg{
+    background-color: white;
+}
+#what h2{
+    font-weight: bold;
+    margin-bottom: 30px;
+    margin-top: 2em;
+    font-size: 32px;
+    text-align: center;
+    color: #343434;
+    font-family: Montserrat;
+    letter-spacing: -0.3px;
+}
+.croix{
+    margin-left: 5px;
+}
+#what p{
+    font-size: 2vw;
+}
  
 /*Section Weekly menus*/
  
@@ -459,3 +481,66 @@ h1, h2, h3, h4, h5 {
     color: #444747;
     text-align: center;
 }
+
+
+/* mediaQ  */
+@media only screen and (min-width: 1200px){
+    #what{
+    height:450px;
+    background-image: url(https://res.cloudinary.com/hellofresh/image/upload/c_fill,f_auto,fl_lossy,h_450,q_auto,w_1855/v1/hellofresh_website/us/cms/lentil/delicious/what-you-get_2560x450.jpg);
+}
+#what p{
+    font-size: 1vw;
+}
+}
+@media only screen and (max-width: 1200px) {
+    #what{
+        
+        height:450px;
+        background-image: url(https://res.cloudinary.com/hellofresh/image/upload/c_fill,f_auto,fl_lossy,h_450,q_auto,w_1855/v1/hellofresh_website/us/cms/lentil/delicious/what-you-get_2560x450.jpg);
+    }
+    #what p{
+        font-size: 1.45vw;
+    }
+}
+@media only screen and (max-width: 992px) {
+    #what{
+        height:550px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url(https://res.cloudinary.com/hellofresh/image/upload/c_fill,f_auto,fl_lossy,h_450,q_auto,w_1855/v1/hellofresh_website/us/cms/lentil/delicious/what-you-get_1199x450.jpg);    
+}
+#what p{
+    font-size: 1.3vw;
+}
+}
+@media only screen and (max-width: 768px) {
+    #what{
+        height:550px;
+        background-image: url(https://res.cloudinary.com/hellofresh/image/upload/c_fill,f_auto,fl_lossy,h_450,q_auto,w_1700/v1/hellofresh_website/us/cms/lentil/delicious/what-you-get_767x450.jpg);    
+    }
+    #what p{
+        font-size: 2vw;
+    }
+}
+@media only screen and (max-width: 576px) {
+    #what{
+        height:500px;
+        background-image: url(https://res.cloudinary.com/hellofresh/image/upload/c_fill,f_auto,fl_lossy,h_450,q_auto,w_1700/v1/hellofresh_website/us/cms/lentil/delicious/what-you-get_767x450.jpg);    
+    }
+    #what p{
+        font-size: 2vw;
+    }
+}
+@media only screen and (max-width: 639) {
+    #what{
+        height:450px;
+        background-image: url(https://res.cloudinary.com/hellofresh/image/upload/c_fill,f_auto,fl_lossy,h_450,q_auto,w_1700/v1/hellofresh_website/us/cms/lentil/delicious/what-you-get_767x450.jpg);
+    }
+    #what p{
+        font-size: 0.6vw;
+    }
+
+}
+    
+    
