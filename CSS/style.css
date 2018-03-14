@@ -1,6 +1,28 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
+.c-offcanvas {
+    left: 0;
+    padding: 1rem;
+    overflow-y: scroll;
+    
+  }
+  
+  .js-offcanvas a {
+     color: #337ab7;
+     outline: 0;
+  }
+  .c-offcanvas--overlay {
+    z-index: 2000!important;
+}
+  
+  .js-offcanvas .dropdown-menu {
+    position:relative;
+    border:none;
+  }
+
+
 /* debut nav*/
+
 .rowtop{
 	height: 80px;
 	box-shadow: 0 2px 4px rgba(0,0,0,0.15);
@@ -10,14 +32,27 @@
 			cursor: pointer;
 
 }
-a:link {
+li a:link {
     color: #343434;
     font-size: 16px;
     font-family: 'Source Sans Pro', sans-serif;
 }
+li a:visited {
+    color: #343434;
+}
+.dropdown-menu .dropdown-item a:link{
+    color: #343434;
+    font-size: 16px;
+    font-family: 'Source Sans Pro', sans-serif;    
+}
 #HFlogo{
 	width: 80px;
 	height: 70px;
+}
+
+.logosvg{
+    display: none;
+    margin-right: 5px;
 }
 #navbarDropdownMenuLink{
 text-decoration: none;
@@ -31,6 +66,43 @@ color: black;
 	color: #91c11e;
     font-size: 14px;
     line-height: 16px;
+}
+.LoginResponsiveVanish{
+    right: -19%;
+}
+.LoginResponsive{
+    
+    display: inline-block;
+    position: relative;
+    color: #343434;
+    font-size: 16px;
+    font-weight: 400;
+   
+    padding: 0px !important;
+    outline: none;
+}
+.loginspan{
+    cursor: pointer;
+    border: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-weight: bold;
+    font-family: Montserrat;
+    letter-spacing: -0.3px;
+    min-width: 120px;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 3px;
+    background-color: transparent;
+    color: #91c11e;
+    font-size: 14px;
+    line-height: 16px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    display: inline-block;
+}
+.loginspan:hover{
+    color:#659943;
 }
 /* dropdown on mouseover */
 .dropdown:hover .dropdown-menu {
@@ -48,7 +120,10 @@ color: black;
 	transition: 0.3s;
 
 }
-.LinkOver:hover a:link{
+/*.LinkOver{
+    height: 80px;
+}*/
+.LinkOver a:hover link{
 	color: #91c11e;
 }
 .dropdown:hover img{
@@ -72,27 +147,25 @@ color: black;
 /* fin nav*/
 /* debut banner*/
 #hello{
-background-image: url(https://res.cloudinary.com/hellofresh/image/upload/f_auto,fl_lossy,q_auto/v1/hellofresh_website/us/cms/lentil/delicious/HF-homepage-2560x700-Tan.jpg);	background-repeat:no-repeat;
 	background-repeat: no-repeat;
 	background-size: cover;
 	width: 100%;
 	background-position: center;
-	height: 700px;
+	
 	position: relative;
 }
 
 #MsgHello{
 	position: absolute;
-	top: 50%;
-	left: 50%;
+	
 	-webkit-transform: translate(-50%, -50%);
 	text-align: center;
 
 }
 
 #MsgHello h1{
-	font-size: 50px;
-	line-height: 60px;
+	
+	
 	color: #343434;
 	font-family: Montserrat, sans-serif;
 	font-weight: 600;
@@ -106,7 +179,7 @@ background-image: url(https://res.cloudinary.com/hellofresh/image/upload/f_auto,
 	font-family: Source Sans Pro;
 }
 
-#ButtonGreen{
+.ButtonGreen{
 	
 	cursor: pointer;
     border: 0px;
@@ -121,7 +194,7 @@ background-image: url(https://res.cloudinary.com/hellofresh/image/upload/f_auto,
     text-align: center;
     border-radius: 3px;
     background-color: #91c11e;
-    color: #fff;
+    color: #fff!important;
     font-size: 14px;
     line-height: 16px;
     padding-top: 15px;
@@ -129,7 +202,10 @@ background-image: url(https://res.cloudinary.com/hellofresh/image/upload/f_auto,
     text-transform: uppercase;
     display: inline-block;
     margin-top: 10px;
+}
 
+.ButtonGreen:hover {
+    background-color: #659943;
 }
 
 
@@ -485,6 +561,17 @@ h1, h2, h3, h4, h5 {
 
 /* mediaQ  */
 @media only screen and (min-width: 1200px){
+    #hello{
+    min-height: 700px;
+    background-image: url(https://res.cloudinary.com/hellofresh/image/upload/f_auto,fl_lossy,q_auto/v1/hellofresh_website/us/cms/lentil/delicious/HF-Main-2560x700-Green.jpg);
+}
+#MsgHello{
+    top: 47%;
+    left: 50%;
+}
+#MsgHello h1{
+    font-size: 4.5vw;
+}
     #what{
     height:450px;
     background-image: url(https://res.cloudinary.com/hellofresh/image/upload/c_fill,f_auto,fl_lossy,h_450,q_auto,w_1855/v1/hellofresh_website/us/cms/lentil/delicious/what-you-get_2560x450.jpg);
@@ -492,8 +579,31 @@ h1, h2, h3, h4, h5 {
 #what p{
     font-size: 1vw;
 }
+.logosvg{
+    display: none;
+}
+hr{
+    display: none;
+}
+.LoginResponsiveVanish{
+    display: none;
+}
+.bside{
+    display: none;
+}
 }
 @media only screen and (max-width: 1200px) {
+    #hello{
+        min-height: 700px;
+        background-image: url(https://res.cloudinary.com/hellofresh/image/upload/f_auto,fl_lossy,q_auto/v1/hellofresh_website/us/cms/lentil/delicious/HF-Main-1440x700-Green.jpg);
+    }
+    #MsgHello{
+        top: 47%;
+        left: 50%;
+    }
+    #MsgHello h1{
+        font-size: 4vw;
+    }
     #what{
         
         height:450px;
@@ -502,8 +612,27 @@ h1, h2, h3, h4, h5 {
     #what p{
         font-size: 1.45vw;
     }
+    .logosvg{
+        display: none;
+    }
+    hr{
+        display: none;
+    }
+    .LoginResponsiveVanish{
+        display: none;
+    }
+    .bside{
+        display: none;
+    }
 }
 @media only screen and (max-width: 992px) {
+    #hello{
+        min-height: 750px;
+        background-image: url(https://res.cloudinary.com/hellofresh/image/upload/f_auto,fl_lossy,q_auto/v1/hellofresh_website/us/cms/lentil/delicious/HF-Main-1023x650-Green.jpg);
+    }
+    #MsgHello h1{
+        font-size: 4.4vw;
+    }
     #what{
         height:550px;
         background-repeat: no-repeat;
@@ -513,8 +642,31 @@ h1, h2, h3, h4, h5 {
 #what p{
     font-size: 1.3vw;
 }
+.logosvg{
+    display: none;
 }
-@media only screen and (max-width: 768px) {
+hr{
+    display: none;
+}
+.LoginResponsiveVanish{
+    display: none;
+}
+.bside{
+    display: none;
+}
+}
+@media only screen and (max-width: 767px) {
+    #hello{
+        min-height: 650px;
+        background-image: url(https://res.cloudinary.com/hellofresh/image/upload/f_auto,fl_lossy,q_auto/v1/hellofresh_website/us/cms/lentil/delicious/HF-Main-767x650-Green.jpg);
+    }
+    #MsgHello{
+        top: 30%;
+        left: 50%;
+    }
+    #MsgHello h1{
+        font-size: 4vw;
+    }
     #what{
         height:550px;
         background-image: url(https://res.cloudinary.com/hellofresh/image/upload/c_fill,f_auto,fl_lossy,h_450,q_auto,w_1700/v1/hellofresh_website/us/cms/lentil/delicious/what-you-get_767x450.jpg);    
@@ -522,17 +674,33 @@ h1, h2, h3, h4, h5 {
     #what p{
         font-size: 2vw;
     }
-}
-@media only screen and (max-width: 576px) {
-    #what{
-        height:500px;
-        background-image: url(https://res.cloudinary.com/hellofresh/image/upload/c_fill,f_auto,fl_lossy,h_450,q_auto,w_1700/v1/hellofresh_website/us/cms/lentil/delicious/what-you-get_767x450.jpg);    
+   
+    .logosvg{
+        display: inline-block;
     }
-    #what p{
-        font-size: 2vw;
+    hr{
+        display: block;
     }
+    #HFlogo{
+        width: 45px;
+        height: 49px;
+        display: inline-block;
+        right: 80%;
+    }
+    .LoginResponsiveVanish{
+        display: block;
+    }
+    .bside{
+        display: inline;
+    }
+    
+
 }
 @media only screen and (max-width: 639) {
+    #hello{
+        min-height: 650px;
+        background-image: url(https://res.cloudinary.com/hellofresh/image/upload/f_auto,fl_lossy,q_auto/v1/hellofresh_website/us/cms/lentil/delicious/HF-Main-543x450-Green.jpg);
+    }
     #what{
         height:450px;
         background-image: url(https://res.cloudinary.com/hellofresh/image/upload/c_fill,f_auto,fl_lossy,h_450,q_auto,w_1700/v1/hellofresh_website/us/cms/lentil/delicious/what-you-get_767x450.jpg);
@@ -540,7 +708,45 @@ h1, h2, h3, h4, h5 {
     #what p{
         font-size: 0.6vw;
     }
+    .logosvg{
+        display: block;
+    }
+    hr{
+        display: block;
+    }
+    .LoginResponsiveVanish{
+        display: block;
+    }
 
 }
+@media only screen and (max-width: 576px) {
+    #hello{
+        background-image: url(https://res.cloudinary.com/hellofresh/image/upload/f_auto,fl_lossy,q_auto/v1/hellofresh_website/us/cms/lentil/delicious/HF-Main-543x450-Green.jpg);
+        min-height: 450px;    
+    }
+    #MsgHello{
+        top: 45%;
+        left: 50%;
+    }
+    #what{
+        height:500px;
+        background-image: url(https://res.cloudinary.com/hellofresh/image/upload/c_fill,f_auto,fl_lossy,h_450,q_auto,w_1700/v1/hellofresh_website/us/cms/lentil/delicious/what-you-get_767x450.jpg);    
+    }
+    #what p{
+        font-size: 2vw;
+    }
+
+    .logosvg{
+        display: inline;
+    }
+    hr{
+        display: block;
+    }
+    .LoginResponsiveVanish{
+        display: block;
+    }
+}
+
+
     
     
