@@ -372,7 +372,7 @@ croixtop {
         font-size: 4.4vw;
     }
     #what {
-        height: 550px;
+        height: 400px;
         background-repeat: no-repeat;
         background-size: cover;
         background-image: url(https://res.cloudinary.com/hellofresh/image/upload/c_fill,f_auto,fl_lossy,h_450,q_auto,w_1855/v1/hellofresh_website/us/cms/lentil/delicious/what-you-get_1199x450.jpg);
@@ -392,6 +392,9 @@ croixtop {
     .bside {
         display: none;
     }
+    .TextSay {
+        font-size: 2vw;
+    }
 }
 
 @media only screen and (max-width: 767px) {
@@ -407,7 +410,7 @@ croixtop {
         font-size: 4vw;
     }
     #what {
-        height: 550px;
+        height: 400px;
         background-image: url(https://res.cloudinary.com/hellofresh/image/upload/c_fill,f_auto,fl_lossy,h_450,q_auto,w_1700/v1/hellofresh_website/us/cms/lentil/delicious/what-you-get_767x450.jpg);
     }
     #what p {
@@ -431,6 +434,9 @@ croixtop {
     .bside {
         display: inline;
     }
+    .TextSay {
+        font-size: 2.5vw;
+    }
 }
 
 @media only screen and (max-width: 639) {
@@ -439,7 +445,7 @@ croixtop {
         background-image: url(https://res.cloudinary.com/hellofresh/image/upload/f_auto,fl_lossy,q_auto/v1/hellofresh_website/us/cms/lentil/delicious/HF-Main-543x450-Green.jpg);
     }
     #what {
-        height: 450px;
+        height: 40px;
         background-image: url(https://res.cloudinary.com/hellofresh/image/upload/c_fill,f_auto,fl_lossy,h_450,q_auto,w_1700/v1/hellofresh_website/us/cms/lentil/delicious/what-you-get_767x450.jpg);
     }
     #what p {
@@ -454,6 +460,12 @@ croixtop {
     .LoginResponsiveVanish {
         display: block;
     }
+    .TextSay {
+        font-size: 2vw;
+    }
+    #MsgHello h1 {
+        font-size: 4vw;
+    }
 }
 
 @media only screen and (max-width: 576px) {
@@ -466,7 +478,7 @@ croixtop {
         left: 50%;
     }
     #what {
-        height: 500px;
+        height: 400px;
         background-image: url(https://res.cloudinary.com/hellofresh/image/upload/c_fill,f_auto,fl_lossy,h_450,q_auto,w_1700/v1/hellofresh_website/us/cms/lentil/delicious/what-you-get_767x450.jpg);
     }
     #what p {
@@ -480,6 +492,15 @@ croixtop {
     }
     .LoginResponsiveVanish {
         display: block;
+    }
+    .TextSay {
+        font-size: 15px;
+    }
+    #MsgHello h1 {
+        font-size: 5vw;
+    }
+    .button_download {
+        width: 250px;
     }
 }
 
