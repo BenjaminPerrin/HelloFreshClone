@@ -47,7 +47,8 @@ li a:visited {
 }
 #HFlogo{
 	width: 80px;
-	height: 70px;
+    height: 70px;
+    z-index: 5000;
 }
 
 .logosvg{
@@ -118,12 +119,16 @@ color: black;
 .dropdown img{
 	transition: transform 0.3;
 	transition: 0.3s;
-
 }
-/*.LinkOver{
-    height: 80px;
-}*/
-.LinkOver a:hover link{
+
+.overGreen:hover{
+    border-left: 3px solid #91c11e;
+    color:#91c11e;
+}
+.LinkOver{
+    box-sizing: border-box;
+}
+.LinkOver:hover{
 	color: #91c11e;
 }
 .dropdown:hover img{
@@ -141,9 +146,7 @@ color: black;
 	font-weight: 400;
     font-family: 'Montserrat', sans-serif;
 }
-.RLinkOver:hover a:link{
-	color: #659a41;
-}
+
 /* fin nav*/
 /* debut banner*/
 #hello{
@@ -157,7 +160,7 @@ color: black;
 
 #MsgHello{
 	position: absolute;
-	
+	transform: translate(-50%, -50%);
 	-webkit-transform: translate(-50%, -50%);
 	text-align: center;
 
