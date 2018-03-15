@@ -9,7 +9,9 @@
 
 .date_week{
     margin-top: 3%;
+}
 
+/* nav coll*/
 .c-offcanvas {
     left: 0;
     padding: 1rem;
@@ -148,7 +150,7 @@ color: black;
 }
 .navbar-right{
 		cursor: pointer;
-
+}
 
 @media screen and (max-width: 767px) {
     .date_week > h1{
@@ -337,7 +339,7 @@ color: black;
 .card-img-top{
 	height: 100px;
     width: 100px;
-
+}
 
  /* Bootstrap Lightbox using Modal */
 
@@ -349,8 +351,7 @@ color: black;
 #profile-grid .thumbnail {margin-bottom:6px;}
 #profile-grid .panel-thumbnail { overflow: hidden; }
 #profile-grid .img-rounded { border-radius: 4px 4px 0 0;}
-=======
-}
+
 
 
 .card-title{
@@ -493,7 +494,7 @@ color: black;
     color: #8fc400;
     border: 1px solid #8fc400;
     padding: 2% 6%;
-=======
+}
 .card-text{
 	text-align: center;
 }
@@ -1010,8 +1011,3 @@ h1, h2, h3, h4, h5 {
         display: block;
     }
 }
-
-
-    
-    
-
