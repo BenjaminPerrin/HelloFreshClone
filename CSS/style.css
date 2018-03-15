@@ -116,6 +116,7 @@ li a:visited {
 
 .dropdown:hover .dropdown-menu {
     display: block;
+    margin-top: -1px;
 }
 
 /* switch arrow + rotate dropdown*/
@@ -787,6 +788,26 @@ croixtop {
     display: inline;
 }
 
+/*pills (type de menus)*/
+
+.navitem .nav-link {
+    color: black;
+    background-color: white;
+    font-size: 1.5vw;
+}
+
+@media screen and (max-width: 767px) {
+    .navitem .nav-link {
+        font-size: 3.2vw;
+    }
+}
+
+/*Footer*/
+
+footer {
+    margin-bottom: 2.5%;
+}
+
 /*Chatbox*/
 
 .chatbox {
@@ -822,7 +843,7 @@ croixtop {
 }
 
 .chatbox__title {
-    min-height: 50px;
+    min-height: 20px;
     padding-right: 10px;
     background-color: #8fc400;
     border-top-left-radius: 4px;
@@ -834,19 +855,23 @@ croixtop {
     align-items: center;
 }
 
+.chatbox__title>img {
+    padding: 0% 5% 0% 5%;
+    border-right: 1px solid white;
+}
+
 .chatbox__title h5 {
-    height: 50px;
-    margin: 0 0 0 15px;
+    height: 40px;
+    margin: 0 0 0 8px;
     line-height: 50px;
     position: relative;
-    padding-left: 2%;
     -webkit-flex-grow: 1;
     flex-grow: 1;
 }
 
 .chatbox__title h5 a {
     color: #fff;
-    max-width: 195px;
+    max-width: 180px;
     display: inline-block;
     text-decoration: none;
     white-space: nowrap;
@@ -879,7 +904,7 @@ croixtop {
     width: 12px;
     height: 12px;
     display: inline-block;
-    border-bottom: 2px solid #fff
+    border-bottom: 2px solid #fff;
 }
 
 .chatbox__title__close svg {
@@ -906,6 +931,11 @@ croixtop {
 .chatbox__credentials .form-control {
     -webkit-box-shadow: none;
     box-shadow: none;
+}
+
+.chatbox__credentials .btn-success {
+    font-family: 'Source Sans Pro', sans-serif;
+    text-transform: uppercase;
 }
 
 .chatbox__body {
@@ -967,15 +997,15 @@ croixtop {
 }
 
 .chatbox--empty {
-    height: 262px;
+    height: 412px;
 }
 
 .chatbox--empty.chatbox--tray {
-    bottom: -212px;
+    bottom: -372px;
 }
 
 .chatbox--empty.chatbox--closed {
-    bottom: -262px;
+    bottom: -412px;
 }
 
 .chatbox--empty .chatbox__body, .chatbox--empty .chatbox__message {
@@ -986,7 +1016,16 @@ croixtop {
     display: block;
 }
 
+.green {
+    opacity: 0.3;
+    background-color: #91c11e;
+}
+
 h1, h2, h3, h4, h5 {
     color: #444747;
     text-align: center;
+}
+
+.hrr {
+    display: block;
 }
