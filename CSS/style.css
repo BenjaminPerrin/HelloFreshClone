@@ -1,15 +1,7 @@
 /*Importation police de caractères*/
 
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
-/* debut nav*/
-.rowtop{
-	height: 80px;
-	box-shadow: 0 2px 4px rgba(0,0,0,0.15);
-	background-color: white;
-}
-.navbarL{
-			cursor: pointer;
+
 
 @media screen and (max-width: 767px) {
     .tweet2{
@@ -136,7 +128,6 @@ h1, h2, h3, h4, h5 {
 }
 
 
-
 /*Bouton section plats*/
 
 .button_plans button{
@@ -220,113 +211,3 @@ h1, h2, h3, h4, h5 {
 }
 
 /*Chatbox*/
-=======
-.RLinkOver:hover a:link{
-	color: #659a41;
-}
-/* fin nav*/
-/* debut banner*/
-#hello{
-background-image: url(https://res.cloudinary.com/hellofresh/image/upload/f_auto,fl_lossy,q_auto/v1/hellofresh_website/us/cms/lentil/delicious/HF-homepage-2560x700-Tan.jpg);	background-repeat:no-repeat;
-	background-repeat: no-repeat;
-	background-size: cover;
-	width: 100%;
-	background-position: center;
-	height: 700px;
-	position: relative;
-}
-
-#MsgHello{
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	-webkit-transform: translate(-50%, -50%);
-	text-align: center;
-
-}
-
-#MsgHello h1{
-	font-size: 50px;
-	line-height: 60px;
-	color: #343434;
-	font-family: Montserrat, sans-serif;
-	font-weight: 600;
-	letter-spacing: -0.3px;
-	text-align: center;
-}
-#TextSay{
-	line-height: 27px;
-	text-align: center;
-	font-size: 18px;
-	font-family: Source Sans Pro;
-}
-
-#ButtonGreen{
-	
-	cursor: pointer;
-    border: 0px;
-    padding-left: 20px;
-    padding-right: 20px;
-    font-weight: 400;
-    font-family: Montserrat;
-    letter-spacing: -0.3px;
-    min-width: 120px;
-    text-decoration: none;
-    text-align: center;
-    border-radius: 3px;
-    background-color: #91c11e;
-    color: #fff;
-    font-size: 14px;
-    line-height: 16px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    text-transform: uppercase;
-    display: inline-block;
-
-}
-
-#buttonGreen:hover{
-
-}
-/*fin banner*/
-
-/* HowItWorks */
-#hello{
-}
-
-
-.card{
-	border:none;
-}
-.card-img-top{
-	height: 100px;
-    width: 100px;
-
-}
-
-.card-title{
-	font-size: 16px;
-	font-weight: 600;
-	text-align: center;
-}
-.card-text{
-	text-align: center;
-}
-.ButtonHow{
-	color: #91c11e;
-	border-color:#91c11e;
-	    font-weight: 400;
-    font-family: Montserrat;
-    font-weight: bold;
-    padding: 10px;
-
-}
-
-/* What */
-
-#what{
-	height:100%;
-	
-	background-image: url(https://res.cloudinary.com/hellofresh/image/upload/c_fill,f_auto,fl_lossy,h…54/v1/hellofresh_website/us/cms/lentil/delicious/what-you-get_1199x450.jpg);
-}
-
